@@ -1,0 +1,12 @@
+button{
+    font-size: 16px;
+    padding: 2%;
+    width: 100%;
+    border-radius: 10px;
+}
+#btn{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+}

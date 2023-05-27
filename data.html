@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Page</title>
+<style>
+    #container{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-top: 2%;
+    }
+    #card{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 16px;
+        padding: 2%;
+    }
+</style>
+</head>
+<body>
+<h1 class="heading">Data Listed</h1>
+<div id="navbar">
+<a href="./login.html"><h2>Login</h2></a>
+<h2 onclick="determine()">Freelancers Page</h2>
+<h2 onclick="determine()">Reports Page</h2>
+</div>
+<div class="loader"></div>
+<div id="features">
+<select id="filter">
+<option value="">Filter By profession</option>
+<option value="student">Student</option>
+<option value="web">Web Developer</option>
+<option value="graphic">Graphic Designer</option>
+</select>
+<select id="sort">
+<option value="">Sort by hourly rate</option>
+<option value="asc">asc</option>
+<option value="desc">desc</option>
+</select>
+<input type="text" placeholder="Search By Name" id="search">
+<button id="srchBtn">Search</button>
+</div>
+<div id="container">
+</div>
+</body>
+<script src="./src/admin.js"></script>
+<script src="./src/data.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports</title>
+<style>
+   table, th, td {
+  border: 1px solid black;
+}
+#freelancer-count,#average-hourly-rate,#booking-status{
+    font-size: 18px;
+    font-weight: bolder;
+}
+</style>
+</head>
+<body>
+<h1 class="heading"> All Reports</h1>
+<div id="navbar">
+<a href="./login.html"><h2>Login</h2></a>
+<h2 onclick="determine()">Freelancers Page</h2>
+<h2 onclick="determine()">Reports Page</h2>
+</div>
+<div class="loader"></div>
+<h3>Total registered freelancers : <samp id="count"></samp></h3>
+<div id="freelancer-count"></div>
+
+<div id="average-hourly-rate"></div>
+<div id="booking-status"></div>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>email</th>
+<th>profession</th>
+<th>skills</th>
+<th>hourly_rate</th>
+<th>isBooked</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div id="misc">
+</div>
+</body>
+<script src="./src/admin.js"></script>
+<script src="./src/reports.js"></script>
+</html>
